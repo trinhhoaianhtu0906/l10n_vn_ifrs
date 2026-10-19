@@ -1,0 +1,636 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_vn_ifrs
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,subtitle:l10n_vn_ifrs.report_ifrs_cf
+msgid "(Direct method)"
+msgstr "(Theo phương pháp trực tiếp)"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,form_note:l10n_vn_ifrs.report_ifrs_cf
+#: model:vn.report,form_note:l10n_vn_ifrs.report_ifrs_pl
+#: model:vn.report,form_note:l10n_vn_ifrs.report_ifrs_pl_c
+#: model:vn.report,form_note:l10n_vn_ifrs.report_ifrs_sfp
+#: model:vn.report,form_note:l10n_vn_ifrs.report_ifrs_sfp_c
+msgid "(Prepared under IFRS Accounting Standards from the VAS books and the IFRS adjustments)"
+msgstr "(Lập theo Chuẩn mực Báo cáo tài chính quốc tế IFRS từ sổ kế toán VAS và các bút toán điều chỉnh IFRS)"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_ASSETS
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_ASSETS
+msgid "ASSETS"
+msgstr "TÀI SẢN"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_AE
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_AE
+msgid "Administrative expenses"
+msgstr "Chi phí quản lý"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_BIO
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_BIOC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_BIO
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_BIOC
+msgid "Biological assets"
+msgstr "Tài sản sinh học"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_BORC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_BORNC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_BORC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_BORNC
+msgid "Borrowings"
+msgstr "Vay"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,title:l10n_vn_ifrs.report_ifrs_sfp_c
+msgid "CONSOLIDATED STATEMENT OF FINANCIAL POSITION (IFRS)"
+msgstr "BÁO CÁO TÌNH HÌNH TÀI CHÍNH HỢP NHẤT (IFRS)"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,title:l10n_vn_ifrs.report_ifrs_pl_c
+msgid "CONSOLIDATED STATEMENT OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME (IFRS)"
+msgstr "BÁO CÁO LÃI LỖ VÀ THU NHẬP TOÀN DIỆN KHÁC HỢP NHẤT (IFRS)"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_32
+msgid "Capital returned and shares repurchased"
+msgstr "Tiền hoàn trả vốn và mua lại cổ phiếu"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CASH
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CASH
+msgid "Cash and cash equivalents"
+msgstr "Tiền và các khoản tương đương tiền"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_60
+msgid "Cash and cash equivalents at the beginning of the period"
+msgstr "Tiền và tương đương tiền đầu kỳ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_70
+msgid "Cash and cash equivalents at the end of the period"
+msgstr "Tiền và tương đương tiền cuối kỳ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_III
+msgid "Cash flows from financing activities"
+msgstr "Lưu chuyển tiền từ hoạt động tài chính"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_II
+msgid "Cash flows from investing activities"
+msgstr "Lưu chuyển tiền từ hoạt động đầu tư"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_I
+msgid "Cash flows from operating activities"
+msgstr "Lưu chuyển tiền từ hoạt động kinh doanh"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,check_message:l10n_vn_ifrs.report_ifrs_cf
+msgid "Closing cash (70) does not match the ledger balance of cash and cash equivalents"
+msgstr "Tiền cuối kỳ (70) không khớp số dư tiền và tương đương tiền trên sổ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CTA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CTA
+msgid "Contract assets"
+msgstr "Tài sản hợp đồng"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CONTRACT
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CONTRACT
+msgid "Contract liabilities"
+msgstr "Nợ phải trả hợp đồng"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_COS
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_COS
+msgid "Cost of sales"
+msgstr "Giá vốn hàng bán"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CA
+msgid "Current assets"
+msgstr "Tài sản ngắn hạn"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CL
+msgid "Current liabilities"
+msgstr "Nợ ngắn hạn"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CTAX
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CTAX
+msgid "Current tax assets"
+msgstr "Tài sản thuế hiện hành"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CTL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CTL
+msgid "Current tax liabilities"
+msgstr "Thuế thu nhập hiện hành phải nộp"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_DTA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_DTA
+msgid "Deferred tax assets"
+msgstr "Tài sản thuế thu nhập hoãn lại"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_DTL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_DTL
+msgid "Deferred tax liabilities"
+msgstr "Thuế thu nhập hoãn lại phải trả"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_36
+msgid "Dividends paid"
+msgstr "Cổ tức đã trả"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_EQL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_EQL
+msgid "EQUITY AND LIABILITIES"
+msgstr "VỐN CHỦ SỞ HỮU VÀ NỢ PHẢI TRẢ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_61
+msgid "Effect of exchange rate changes"
+msgstr "Ảnh hưởng của thay đổi tỷ giá"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_EQP
+msgid "Equity attributable to owners of the parent"
+msgstr "Vốn chủ sở hữu thuộc về cổ đông công ty mẹ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_FC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_FC
+msgid "Finance costs"
+msgstr "Chi phí tài chính"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_FI
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_FI
+msgid "Finance income"
+msgstr "Doanh thu tài chính"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_GW
+msgid "Goodwill"
+msgstr "Lợi thế thương mại"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_GP
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_GP
+msgid "Gross profit"
+msgstr "Lợi nhuận gộp"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,form_code:l10n_vn_ifrs.report_ifrs_cf
+#: model:vn.report,form_code:l10n_vn_ifrs.report_ifrs_pl
+#: model:vn.report,form_code:l10n_vn_ifrs.report_ifrs_pl_c
+#: model:vn.report,form_code:l10n_vn_ifrs.report_ifrs_sfp
+#: model:vn.report,form_code:l10n_vn_ifrs.report_ifrs_sfp_c
+msgid "IFRS"
+msgstr "IFRS"
+
+#. module: l10n_vn_ifrs
+#. odoo-python
+#: code:addons/l10n_vn_ifrs/hooks.py:0
+msgid "IFRS Adjustments"
+msgstr "Điều chỉnh IFRS"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,name:l10n_vn_ifrs.report_ifrs_sfp_c
+msgid "IFRS Consolidated Statement of Financial Position"
+msgstr "IFRS - Báo cáo tình hình tài chính hợp nhất"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,name:l10n_vn_ifrs.report_ifrs_pl_c
+msgid "IFRS Consolidated Statement of Profit or Loss and Other Comprehensive Income"
+msgstr "IFRS - Báo cáo lãi lỗ và thu nhập toàn diện khác hợp nhất"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,name:l10n_vn_ifrs.report_ifrs_cf
+msgid "IFRS Statement of Cash Flows"
+msgstr "IFRS - Báo cáo lưu chuyển tiền tệ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,name:l10n_vn_ifrs.report_ifrs_sfp
+msgid "IFRS Statement of Financial Position"
+msgstr "IFRS - Báo cáo tình hình tài chính"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,name:l10n_vn_ifrs.report_ifrs_pl
+msgid "IFRS Statement of Profit or Loss and Other Comprehensive Income"
+msgstr "IFRS - Báo cáo lãi lỗ và thu nhập toàn diện khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_TAX
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_TAX
+msgid "Income tax expense"
+msgstr "Chi phí thuế thu nhập doanh nghiệp"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_05
+msgid "Income taxes paid"
+msgstr "Thuế thu nhập doanh nghiệp đã nộp"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_INTANG
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_INTANG
+msgid "Intangible assets"
+msgstr "Tài sản vô hình"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_27
+msgid "Interest and dividends received"
+msgstr "Tiền lãi và cổ tức nhận được"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_04
+msgid "Interest paid"
+msgstr "Tiền lãi vay đã trả"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_INV
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_INV
+msgid "Inventories"
+msgstr "Hàng tồn kho"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_IP
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_IP
+msgid "Investment property"
+msgstr "Bất động sản đầu tư"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_INVEST
+msgid "Investments in associates and joint ventures"
+msgstr "Đầu tư vào công ty liên kết, liên doanh"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_25
+msgid "Investments in other entities"
+msgstr "Tiền chi đầu tư vào đơn vị khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_INVEST
+msgid "Investments in subsidiaries, associates and joint ventures"
+msgstr "Đầu tư vào công ty con, công ty liên kết, liên doanh"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OCI2
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OCI2
+msgid "Items that may be reclassified to profit or loss: exchange differences"
+msgstr "Khoản mục có thể phân loại lại vào lãi lỗ: chênh lệch tỷ giá"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OCI1
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OCI1
+msgid "Items that will not be reclassified to profit or loss: revaluation surplus"
+msgstr "Khoản mục không phân loại lại vào lãi lỗ: thặng dư đánh giá lại"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_LEASEC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_LEASENC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_LEASEC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_LEASENC
+msgid "Lease liabilities"
+msgstr "Nợ thuê"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_23
+msgid "Loans granted and debt instruments purchased"
+msgstr "Tiền chi cho vay, mua công cụ nợ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_24
+msgid "Loans repaid and debt instruments sold"
+msgstr "Tiền thu hồi cho vay, bán công cụ nợ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_40
+msgid "Net cash from financing activities"
+msgstr "Lưu chuyển tiền thuần từ hoạt động tài chính"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_20
+msgid "Net cash from operating activities"
+msgstr "Lưu chuyển tiền thuần từ hoạt động kinh doanh"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_30
+msgid "Net cash used in investing activities"
+msgstr "Lưu chuyển tiền thuần từ hoạt động đầu tư"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_50
+msgid "Net increase (decrease) in cash and cash equivalents"
+msgstr "Tăng (giảm) thuần tiền và tương đương tiền"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_PNCI
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_NCI
+msgid "Non-controlling interests"
+msgstr "Lợi ích cổ đông không kiểm soát"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_NCA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_NCA
+msgid "Non-current assets"
+msgstr "Tài sản dài hạn"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_NCL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_NCL
+msgid "Non-current liabilities"
+msgstr "Nợ dài hạn"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OP
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OP
+msgid "Operating profit"
+msgstr "Lợi nhuận từ hoạt động kinh doanh"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OCIH
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OCIH
+msgid "Other comprehensive income"
+msgstr "Thu nhập toàn diện khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OCIT
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OCIT
+msgid "Other comprehensive income for the period"
+msgstr "Thu nhập toàn diện khác trong kỳ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_OCA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_OCA
+msgid "Other current assets"
+msgstr "Tài sản ngắn hạn khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OE
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OE
+msgid "Other expenses"
+msgstr "Chi phí khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_OFAC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_OFANC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_OFAC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_OFANC
+msgid "Other financial assets"
+msgstr "Tài sản tài chính khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OI
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OI
+msgid "Other income"
+msgstr "Thu nhập khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_ONCA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_ONCA
+msgid "Other non-current assets"
+msgstr "Tài sản dài hạn khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_OLNC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_OLNC
+msgid "Other non-current liabilities"
+msgstr "Nợ dài hạn khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_07
+msgid "Other operating payments"
+msgstr "Tiền chi khác cho hoạt động kinh doanh"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_06
+msgid "Other operating receipts"
+msgstr "Tiền thu khác từ hoạt động kinh doanh"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_RES
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_RES
+msgid "Other reserves"
+msgstr "Các quỹ và dự trữ khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_POWN
+msgid "Owners of the parent"
+msgstr "Cổ đông công ty mẹ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_35
+msgid "Payment of lease liabilities"
+msgstr "Tiền trả nợ thuê"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_03
+msgid "Payments to employees"
+msgstr "Tiền chi trả người lao động"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_02
+msgid "Payments to suppliers"
+msgstr "Tiền chi trả nhà cung cấp"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_33
+msgid "Proceeds from borrowings"
+msgstr "Tiền thu từ đi vay"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_26
+msgid "Proceeds from investments in other entities"
+msgstr "Tiền thu hồi đầu tư vào đơn vị khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_31
+msgid "Proceeds from issue of shares"
+msgstr "Tiền thu từ phát hành cổ phiếu"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_22
+msgid "Proceeds from sale of property, plant and equipment and other long-term assets"
+msgstr "Tiền thu từ bán bất động sản, nhà xưởng, thiết bị và tài sản dài hạn khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_PATTR
+msgid "Profit attributable to:"
+msgstr "Lợi nhuận phân bổ cho:"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_PBT
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_PBT
+msgid "Profit before tax"
+msgstr "Lợi nhuận trước thuế"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_PFY
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_PFY
+msgid "Profit for the period"
+msgstr "Lợi nhuận trong kỳ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_PPE
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_PPE
+msgid "Property, plant and equipment"
+msgstr "Bất động sản, nhà xưởng và thiết bị"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_PROVC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_PROVNC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_PROVC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_PROVNC
+msgid "Provisions"
+msgstr "Dự phòng phải trả"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_21
+msgid "Purchase of property, plant and equipment and other long-term assets"
+msgstr "Tiền chi mua sắm bất động sản, nhà xưởng, thiết bị và tài sản dài hạn khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_01
+msgid "Receipts from customers"
+msgstr "Tiền thu từ khách hàng"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_34
+msgid "Repayment of borrowings"
+msgstr "Tiền trả nợ gốc vay"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_RE
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_RE
+msgid "Retained earnings"
+msgstr "Lợi nhuận giữ lại"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_REV
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_REV
+msgid "Revenue"
+msgstr "Doanh thu"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_ROU
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_ROU
+msgid "Right-of-use assets"
+msgstr "Tài sản quyền sử dụng"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,title:l10n_vn_ifrs.report_ifrs_cf
+msgid "STATEMENT OF CASH FLOWS (IFRS)"
+msgstr "BÁO CÁO LƯU CHUYỂN TIỀN TỆ (IFRS)"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,title:l10n_vn_ifrs.report_ifrs_sfp
+msgid "STATEMENT OF FINANCIAL POSITION (IFRS)"
+msgstr "BÁO CÁO TÌNH HÌNH TÀI CHÍNH (IFRS)"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,title:l10n_vn_ifrs.report_ifrs_pl
+msgid "STATEMENT OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME (IFRS)"
+msgstr "BÁO CÁO LÃI LỖ VÀ THU NHẬP TOÀN DIỆN KHÁC (IFRS)"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_SD
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_SD
+msgid "Selling and distribution expenses"
+msgstr "Chi phí bán hàng"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_SC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_SC
+msgid "Share capital"
+msgstr "Vốn cổ phần"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_ASSOC
+msgid "Share of profit of associates and joint ventures"
+msgstr "Phần lãi trong công ty liên kết, liên doanh"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_SP
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_SP
+msgid "Share premium"
+msgstr "Thặng dư vốn cổ phần"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TA
+msgid "TOTAL ASSETS"
+msgstr "TỔNG CỘNG TÀI SẢN"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TEL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TEL
+msgid "TOTAL EQUITY AND LIABILITIES"
+msgstr "TỔNG CỘNG VỐN CHỦ SỞ HỮU VÀ NỢ PHẢI TRẢ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,check_message:l10n_vn_ifrs.report_ifrs_sfp
+#: model:vn.report,check_message:l10n_vn_ifrs.report_ifrs_sfp_c
+msgid "Total assets differ from total equity and liabilities"
+msgstr "Tổng tài sản không bằng tổng vốn chủ sở hữu và nợ phải trả"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_TCI
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_TCI
+msgid "Total comprehensive income for the period"
+msgstr "Tổng thu nhập toàn diện trong kỳ"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_EQ
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_EQ
+msgid "Total equity"
+msgstr "Tổng vốn chủ sở hữu"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TL
+msgid "Total liabilities"
+msgstr "Tổng nợ phải trả"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TP
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TP
+msgid "Trade and other payables"
+msgstr "Phải trả người bán và phải trả khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TRC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TRNC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TRC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TRNC
+msgid "Trade and other receivables"
+msgstr "Phải thu khách hàng và phải thu khác"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TS
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TS
+msgid "Treasury shares"
+msgstr "Cổ phiếu quỹ"

@@ -1,0 +1,1681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="report_ifrs_sfp" model="vn.report">
+        <field name="name">IFRS Statement of Financial Position</field>
+        <field name="code">IFRS-SFP</field>
+        <field name="sequence">110</field>
+        <field name="kind">position</field>
+        <field name="ledger">ifrs</field>
+        <field name="show_codes" eval="False"/>
+        <field name="form_code">IFRS</field>
+        <field name="form_note">(Prepared under IFRS Accounting Standards from the VAS books and the IFRS adjustments)</field>
+        <field name="title">STATEMENT OF FINANCIAL POSITION (IFRS)</field>
+        <field name="check_expression">[TA] - [TEL]</field>
+        <field name="check_message">Total assets differ from total equity and liabilities</field>
+    </record>
+
+    <record id="ifrs_sfp_ASSETS" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">10</field>
+        <field name="code">ASSETS</field>
+        <field name="name">ASSETS</field>
+        <field name="formula"></field>
+        <field name="level">0</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_NCA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">20</field>
+        <field name="code">NCA</field>
+        <field name="name">Non-current assets</field>
+        <field name="formula">[PPE] + [ROU] + [INTANG] + [IP] + [BIO] + [INVEST] + [OFANC] + [TRNC] + [DTA] + [ONCA]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_PPE" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">30</field>
+        <field name="code">PPE</field>
+        <field name="name">Property, plant and equipment</field>
+        <field name="formula">(BAL(211)) + (BAL(2141)) + (BAL(241))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_ROU" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">40</field>
+        <field name="code">ROU</field>
+        <field name="name">Right-of-use assets</field>
+        <field name="formula">(BAL(212)) + (BAL(2142))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_INTANG" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">50</field>
+        <field name="code">INTANG</field>
+        <field name="name">Intangible assets</field>
+        <field name="formula">(BAL(213)) + (BAL(2143))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_IP" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">60</field>
+        <field name="code">IP</field>
+        <field name="name">Investment property</field>
+        <field name="formula">(BAL(217)) + (BAL(2147))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_BIO" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">70</field>
+        <field name="code">BIO</field>
+        <field name="name">Biological assets</field>
+        <field name="formula">(BAL(21511)) + (BAL(215121)) + (BAL(215122)) + (BAL(21522)) + (BAL(21532)) + (BAL(22952))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_INVEST" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">80</field>
+        <field name="code">INVEST</field>
+        <field name="name">Investments in subsidiaries, associates and joint ventures</field>
+        <field name="formula">(BAL(221)) + (BAL(222))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_OFANC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">90</field>
+        <field name="code">OFANC</field>
+        <field name="name">Other financial assets</field>
+        <field name="formula">(BAL(22812)) + (BAL(22923)) + (BAL(12813, 12823, 12832, 12883)) + (BAL(22924))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_TRNC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">100</field>
+        <field name="code">TRNC</field>
+        <field name="name">Trade and other receivables</field>
+        <field name="formula">(PDR(1312)) + (PDR(3312)) + (BAL(1361)) + (BAL(13622, 13632, 13682)) + (PDR(13882, 1412, 2442, 3342, 33812, 33822, 33832, 33842, 33862, 33882, 3442) + DR(3352)) + (BAL(22932))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_DTA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">110</field>
+        <field name="code">DTA</field>
+        <field name="name">Deferred tax assets</field>
+        <field name="formula">(BAL(243))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_ONCA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">120</field>
+        <field name="code">ONCA</field>
+        <field name="name">Other non-current assets</field>
+        <field name="formula">(BAL(1542, 22942)) + (BAL(2422)) + (BAL(1532, 22943)) + (BAL(22882))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_CA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">130</field>
+        <field name="code">CA</field>
+        <field name="name">Current assets</field>
+        <field name="formula">[INV] + [BIOC] + [TRC] + [CTA] + [OFAC] + [CTAX] + [OCA] + [CASH]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_INV" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">140</field>
+        <field name="code">INV</field>
+        <field name="name">Inventories</field>
+        <field name="formula">(BAL(151, 152, 1531, 1541, 155, 156, 157, 158)) + (BAL(22941))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_BIOC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">150</field>
+        <field name="code">BIOC</field>
+        <field name="name">Biological assets</field>
+        <field name="formula">(BAL(21521)) + (BAL(21531)) + (BAL(22951))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_TRC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">160</field>
+        <field name="code">TRC</field>
+        <field name="name">Trade and other receivables</field>
+        <field name="formula">(PDR(1311)) + (PDR(3311)) + (BAL(13621, 13631, 13681)) + (PDR(13881, 1411, 2441, 3341, 33811, 33821, 33831, 33841, 33861, 33881, 3441, 332) + DR(3351)) + (BAL(22931)) + (PDR(13811, 13812))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_CTA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">170</field>
+        <field name="code">CTA</field>
+        <field name="name">Contract assets</field>
+        <field name="formula">(PDR(337))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_OFAC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">180</field>
+        <field name="code">OFAC</field>
+        <field name="name">Other financial assets</field>
+        <field name="formula">(BAL(121)) + (BAL(2291)) + (BAL(12812, 12822, 12831, 12882)) + (BAL(22811)) + (BAL(22921, 22922)) + (DR(171))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_CTAX" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">190</field>
+        <field name="code">CTAX</field>
+        <field name="name">Current tax assets</field>
+        <field name="formula">(BAL(133)) + (PDR(13831, 13832) + DR(333))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_OCA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">200</field>
+        <field name="code">OCA</field>
+        <field name="name">Other current assets</field>
+        <field name="formula">(BAL(2421)) + (BAL(22881))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_CASH" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">210</field>
+        <field name="code">CASH</field>
+        <field name="name">Cash and cash equivalents</field>
+        <field name="formula">(BAL(111, 112, 113)) + (BAL(12811, 12881))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_TA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">220</field>
+        <field name="code">TA</field>
+        <field name="name">TOTAL ASSETS</field>
+        <field name="formula">[NCA] + [CA]</field>
+        <field name="level">0</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_EQL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">230</field>
+        <field name="code">EQL</field>
+        <field name="name">EQUITY AND LIABILITIES</field>
+        <field name="formula"></field>
+        <field name="level">0</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_EQ" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">240</field>
+        <field name="code">EQ</field>
+        <field name="name">Total equity</field>
+        <field name="formula">[SC] + [SP] + [TS] + [RES] + [RE]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_SC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">250</field>
+        <field name="code">SC</field>
+        <field name="name">Share capital</field>
+        <field name="formula">(NBAL(41111)) + (NBAL(411122))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_SP" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">260</field>
+        <field name="code">SP</field>
+        <field name="name">Share premium</field>
+        <field name="formula">(NBAL(4112))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_TS" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">270</field>
+        <field name="code">TS</field>
+        <field name="name">Treasury shares</field>
+        <field name="formula">(NBAL(419))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_RES" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">280</field>
+        <field name="code">RES</field>
+        <field name="name">Other reserves</field>
+        <field name="formula">(NBAL(4113)) + (NBAL(4118)) + (NBAL(412)) + (NBAL(413)) + (NBAL(414)) + (NBAL(418))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_RE" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">290</field>
+        <field name="code">RE</field>
+        <field name="name">Retained earnings</field>
+        <field name="formula">(NBAL(4211) + PL_PRIOR()) + (NBAL(4212) + PL_CUR())</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_NCL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">300</field>
+        <field name="code">NCL</field>
+        <field name="name">Non-current liabilities</field>
+        <field name="formula">[BORNC] + [LEASENC] + [DTL] + [PROVNC] + [OLNC]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_BORNC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">310</field>
+        <field name="code">BORNC</field>
+        <field name="name">Borrowings</field>
+        <field name="formula">NBAL(34112, 34312) + NBAL(3432)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_LEASENC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">320</field>
+        <field name="code">LEASENC</field>
+        <field name="name">Lease liabilities</field>
+        <field name="formula">NBAL(34122)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_DTL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">330</field>
+        <field name="code">DTL</field>
+        <field name="name">Deferred tax liabilities</field>
+        <field name="formula">(NBAL(347))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_PROVNC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">340</field>
+        <field name="code">PROVNC</field>
+        <field name="name">Provisions</field>
+        <field name="formula">(NBAL(35212, 35222, 35232, 35252))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_OLNC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">350</field>
+        <field name="code">OLNC</field>
+        <field name="name">Other non-current liabilities</field>
+        <field name="formula">(PCR(3312)) + (PCR(1312)) + (CR(33322, 33332, 33342, 33352, 33362, 33372, 33392)) + (CR(3352)) + (NBAL(3361)) + (NBAL(33622, 33632, 33682)) + (NBAL(33872)) + (PCR(13832, 13882, 1412, 2442, 3342, 33812, 33822, 33832, 33842, 33862, 33882, 3442)) + (NBAL(411121)) + (NBAL(356))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_CL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">360</field>
+        <field name="code">CL</field>
+        <field name="name">Current liabilities</field>
+        <field name="formula">[TP] + [CONTRACT] + [CTL] + [BORC] + [LEASEC] + [PROVC]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_TP" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">370</field>
+        <field name="code">TP</field>
+        <field name="name">Trade and other payables</field>
+        <field name="formula">(PCR(3311)) + (PCR(332)) + (PCR(3341)) + (CR(3351)) + (NBAL(33621, 33631, 33681)) + (PCR(13811, 13812, 13831, 13881, 1411, 2441, 33811, 33821, 33831, 33841, 33861, 33881, 3441)) + (NBAL(353)) + (NBAL(357))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_CONTRACT" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">380</field>
+        <field name="code">CONTRACT</field>
+        <field name="name">Contract liabilities</field>
+        <field name="formula">(PCR(1311)) + (PCR(337)) + (NBAL(33871))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_CTL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">390</field>
+        <field name="code">CTL</field>
+        <field name="name">Current tax liabilities</field>
+        <field name="formula">(CR(33311, 33312, 33321, 33331, 33341, 33351, 33361, 33371, 33381, 33382, 33391))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_BORC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">400</field>
+        <field name="code">BORC</field>
+        <field name="name">Borrowings</field>
+        <field name="formula">NBAL(34111, 34311) + CR(171)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_LEASEC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">410</field>
+        <field name="code">LEASEC</field>
+        <field name="name">Lease liabilities</field>
+        <field name="formula">NBAL(34121)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_PROVC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">420</field>
+        <field name="code">PROVC</field>
+        <field name="name">Provisions</field>
+        <field name="formula">(NBAL(35211, 35221, 35231, 35251))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_TL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">430</field>
+        <field name="code">TL</field>
+        <field name="name">Total liabilities</field>
+        <field name="formula">[NCL] + [CL]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_TEL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp"/>
+        <field name="sequence">440</field>
+        <field name="code">TEL</field>
+        <field name="name">TOTAL EQUITY AND LIABILITIES</field>
+        <field name="formula">[EQ] + [TL]</field>
+        <field name="level">0</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="report_ifrs_pl" model="vn.report">
+        <field name="name">IFRS Statement of Profit or Loss and Other Comprehensive Income</field>
+        <field name="code">IFRS-PL</field>
+        <field name="sequence">120</field>
+        <field name="kind">period</field>
+        <field name="ledger">ifrs</field>
+        <field name="show_codes" eval="False"/>
+        <field name="form_code">IFRS</field>
+        <field name="form_note">(Prepared under IFRS Accounting Standards from the VAS books and the IFRS adjustments)</field>
+        <field name="title">STATEMENT OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME (IFRS)</field>
+    </record>
+
+    <record id="ifrs_pl_REV" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">10</field>
+        <field name="code">REV</field>
+        <field name="name">Revenue</field>
+        <field name="formula">CT(511) - CT(5117) - (DT(511) - DT(5117) + BAL(521))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_COS" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">20</field>
+        <field name="code">COS</field>
+        <field name="name">Cost of sales</field>
+        <field name="formula">-(BAL(632) - BAL(6327))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_GP" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">30</field>
+        <field name="code">GP</field>
+        <field name="name">Gross profit</field>
+        <field name="formula">[REV] + [COS]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_OI" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">40</field>
+        <field name="code">OI</field>
+        <field name="name">Other income</field>
+        <field name="formula">NBAL(711) + NBAL(5117) - BAL(6327)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_SD" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">50</field>
+        <field name="code">SD</field>
+        <field name="name">Selling and distribution expenses</field>
+        <field name="formula">-BAL(641)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_AE" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">60</field>
+        <field name="code">AE</field>
+        <field name="name">Administrative expenses</field>
+        <field name="formula">-BAL(642)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_OE" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">70</field>
+        <field name="code">OE</field>
+        <field name="name">Other expenses</field>
+        <field name="formula">-BAL(811)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_OP" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">80</field>
+        <field name="code">OP</field>
+        <field name="name">Operating profit</field>
+        <field name="formula">[GP] + [OI] + [SD] + [AE] + [OE]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_FI" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">90</field>
+        <field name="code">FI</field>
+        <field name="name">Finance income</field>
+        <field name="formula">NBAL(515)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_FC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">100</field>
+        <field name="code">FC</field>
+        <field name="name">Finance costs</field>
+        <field name="formula">-BAL(635)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_PBT" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">110</field>
+        <field name="code">PBT</field>
+        <field name="name">Profit before tax</field>
+        <field name="formula">[OP] + [FI] + [FC]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_TAX" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">120</field>
+        <field name="code">TAX</field>
+        <field name="name">Income tax expense</field>
+        <field name="formula">-BAL(821)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_PFY" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">130</field>
+        <field name="code">PFY</field>
+        <field name="name">Profit for the period</field>
+        <field name="formula">[PBT] + [TAX]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_OCIH" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">140</field>
+        <field name="code">OCIH</field>
+        <field name="name">Other comprehensive income</field>
+        <field name="formula"></field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_OCI1" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">150</field>
+        <field name="code">OCI1</field>
+        <field name="name">Items that will not be reclassified to profit or loss: revaluation surplus</field>
+        <field name="formula">NBAL(412)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_OCI2" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">160</field>
+        <field name="code">OCI2</field>
+        <field name="name">Items that may be reclassified to profit or loss: exchange differences</field>
+        <field name="formula">NBAL(413)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_OCIT" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">170</field>
+        <field name="code">OCIT</field>
+        <field name="name">Other comprehensive income for the period</field>
+        <field name="formula">[OCI1] + [OCI2]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_TCI" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl"/>
+        <field name="sequence">180</field>
+        <field name="code">TCI</field>
+        <field name="name">Total comprehensive income for the period</field>
+        <field name="formula">[PFY] + [OCIT]</field>
+        <field name="level">0</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="report_ifrs_cf" model="vn.report">
+        <field name="name">IFRS Statement of Cash Flows</field>
+        <field name="code">IFRS-CF</field>
+        <field name="sequence">130</field>
+        <field name="kind">cashflow</field>
+        <field name="ledger">ifrs</field>
+        <field name="show_codes" eval="False"/>
+        <field name="form_code">IFRS</field>
+        <field name="form_note">(Prepared under IFRS Accounting Standards from the VAS books and the IFRS adjustments)</field>
+        <field name="title">STATEMENT OF CASH FLOWS (IFRS)</field>
+        <field name="subtitle">(Direct method)</field>
+        <field name="check_expression">[70] - CLOSE(111, 112, 113, 12811, 12881)</field>
+        <field name="check_message">Closing cash (70) does not match the ledger balance of cash and cash equivalents</field>
+    </record>
+
+    <record id="ifrs_cf_I" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">10</field>
+        <field name="code">I</field>
+        <field name="name">Cash flows from operating activities</field>
+        <field name="formula"></field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_cf_01" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">20</field>
+        <field name="code">01</field>
+        <field name="name">Receipts from customers</field>
+        <field name="formula">CASH(131, 511, 521, 3331, 3387) - CASH(5117)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_02" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">30</field>
+        <field name="code">02</field>
+        <field name="name">Payments to suppliers</field>
+        <field name="formula">CASH(331, 151, 152, 153, 154, 155, 156, 157, 158, 133, 242, 621, 623, 627, 641, 642)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_03" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">40</field>
+        <field name="code">03</field>
+        <field name="name">Payments to employees</field>
+        <field name="formula">CASH(334)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_04" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">50</field>
+        <field name="code">04</field>
+        <field name="name">Interest paid</field>
+        <field name="formula">CASH(6351)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_05" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">60</field>
+        <field name="code">05</field>
+        <field name="name">Income taxes paid</field>
+        <field name="formula">CASH(3334)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_06" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">70</field>
+        <field name="code">06</field>
+        <field name="name">Other operating receipts</field>
+        <field name="formula">CASH_REST_IN()</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_07" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">80</field>
+        <field name="code">07</field>
+        <field name="name">Other operating payments</field>
+        <field name="formula">CASH_REST_OUT()</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_20" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">90</field>
+        <field name="code">20</field>
+        <field name="name">Net cash from operating activities</field>
+        <field name="formula">[01] + [02] + [03] + [04] + [05] + [06] + [07]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_cf_II" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">100</field>
+        <field name="code">II</field>
+        <field name="name">Cash flows from investing activities</field>
+        <field name="formula"></field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_cf_21" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">110</field>
+        <field name="code">21</field>
+        <field name="name">Purchase of property, plant and equipment and other long-term assets</field>
+        <field name="formula">CASHD(211, 212, 213, 215, 217, 241)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_22" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">120</field>
+        <field name="code">22</field>
+        <field name="name">Proceeds from sale of property, plant and equipment and other long-term assets</field>
+        <field name="formula">CASHC(211, 212, 213, 215, 217, 241, 711, 5117)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_23" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">130</field>
+        <field name="code">23</field>
+        <field name="name">Loans granted and debt instruments purchased</field>
+        <field name="formula">CASHD(1281, 1282, 1283, 1288, 171)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_24" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">140</field>
+        <field name="code">24</field>
+        <field name="name">Loans repaid and debt instruments sold</field>
+        <field name="formula">CASHC(1281, 1282, 1283, 1288, 171)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_25" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">150</field>
+        <field name="code">25</field>
+        <field name="name">Investments in other entities</field>
+        <field name="formula">CASHD(221, 222, 2281)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_26" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">160</field>
+        <field name="code">26</field>
+        <field name="name">Proceeds from investments in other entities</field>
+        <field name="formula">CASHC(221, 222, 2281)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_27" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">170</field>
+        <field name="code">27</field>
+        <field name="name">Interest and dividends received</field>
+        <field name="formula">CASHC(515)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_30" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">180</field>
+        <field name="code">30</field>
+        <field name="name">Net cash used in investing activities</field>
+        <field name="formula">[21] + [22] + [23] + [24] + [25] + [26] + [27]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_cf_III" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">190</field>
+        <field name="code">III</field>
+        <field name="name">Cash flows from financing activities</field>
+        <field name="formula"></field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_cf_31" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">200</field>
+        <field name="code">31</field>
+        <field name="name">Proceeds from issue of shares</field>
+        <field name="formula">CASHC(411)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_32" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">210</field>
+        <field name="code">32</field>
+        <field name="name">Capital returned and shares repurchased</field>
+        <field name="formula">CASHD(411, 419)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_33" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">220</field>
+        <field name="code">33</field>
+        <field name="name">Proceeds from borrowings</field>
+        <field name="formula">CASHC(341, 343)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_34" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">230</field>
+        <field name="code">34</field>
+        <field name="name">Repayment of borrowings</field>
+        <field name="formula">CASHD(3411, 343)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_35" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">240</field>
+        <field name="code">35</field>
+        <field name="name">Payment of lease liabilities</field>
+        <field name="formula">CASHD(3412)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_36" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">250</field>
+        <field name="code">36</field>
+        <field name="name">Dividends paid</field>
+        <field name="formula">CASHD(332, 421)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_40" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">260</field>
+        <field name="code">40</field>
+        <field name="name">Net cash from financing activities</field>
+        <field name="formula">[31] + [32] + [33] + [34] + [35] + [36]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_cf_50" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">270</field>
+        <field name="code">50</field>
+        <field name="name">Net increase (decrease) in cash and cash equivalents</field>
+        <field name="formula">[20] + [30] + [40]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_cf_60" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">280</field>
+        <field name="code">60</field>
+        <field name="name">Cash and cash equivalents at the beginning of the period</field>
+        <field name="formula">OPEN(111, 112, 113, 12811, 12881)</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_cf_61" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">290</field>
+        <field name="code">61</field>
+        <field name="name">Effect of exchange rate changes</field>
+        <field name="formula">CASH(413)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_cf_70" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_cf"/>
+        <field name="sequence">300</field>
+        <field name="code">70</field>
+        <field name="name">Cash and cash equivalents at the end of the period</field>
+        <field name="formula">[50] + [60] + [61]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="report_ifrs_sfp_c" model="vn.report">
+        <field name="name">IFRS Consolidated Statement of Financial Position</field>
+        <field name="code">IFRS-SFP-C</field>
+        <field name="sequence">140</field>
+        <field name="kind">position</field>
+        <field name="ledger">ifrs</field>
+        <field name="show_codes" eval="False"/>
+        <field name="form_code">IFRS</field>
+        <field name="form_note">(Prepared under IFRS Accounting Standards from the VAS books and the IFRS adjustments)</field>
+        <field name="title">CONSOLIDATED STATEMENT OF FINANCIAL POSITION (IFRS)</field>
+        <field name="check_expression">[TA] - [TEL]</field>
+        <field name="check_message">Total assets differ from total equity and liabilities</field>
+        <field name="consolidated" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_c_ASSETS" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">10</field>
+        <field name="code">ASSETS</field>
+        <field name="name">ASSETS</field>
+        <field name="formula"></field>
+        <field name="level">0</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_c_NCA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">20</field>
+        <field name="code">NCA</field>
+        <field name="name">Non-current assets</field>
+        <field name="formula">[PPE] + [ROU] + [INTANG] + [GW] + [IP] + [BIO] + [INVEST] + [OFANC] + [TRNC] + [DTA] + [ONCA]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_c_PPE" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">30</field>
+        <field name="code">PPE</field>
+        <field name="name">Property, plant and equipment</field>
+        <field name="formula">(BAL(211)) + (BAL(2141)) + (BAL(241))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_ROU" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">40</field>
+        <field name="code">ROU</field>
+        <field name="name">Right-of-use assets</field>
+        <field name="formula">(BAL(212)) + (BAL(2142))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_INTANG" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">50</field>
+        <field name="code">INTANG</field>
+        <field name="name">Intangible assets</field>
+        <field name="formula">(BAL(213)) + (BAL(2143))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_GW" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">60</field>
+        <field name="code">GW</field>
+        <field name="name">Goodwill</field>
+        <field name="formula">(BAL("HN_GW"))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_IP" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">70</field>
+        <field name="code">IP</field>
+        <field name="name">Investment property</field>
+        <field name="formula">(BAL(217)) + (BAL(2147))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_BIO" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">80</field>
+        <field name="code">BIO</field>
+        <field name="name">Biological assets</field>
+        <field name="formula">(BAL(21511)) + (BAL(215121)) + (BAL(215122)) + (BAL(21522)) + (BAL(21532)) + (BAL(22952))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_INVEST" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">90</field>
+        <field name="code">INVEST</field>
+        <field name="name">Investments in associates and joint ventures</field>
+        <field name="formula">(BAL(221)) + (BAL(222))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_OFANC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">100</field>
+        <field name="code">OFANC</field>
+        <field name="name">Other financial assets</field>
+        <field name="formula">(BAL(22812)) + (BAL(22923)) + (BAL(12813, 12823, 12832, 12883)) + (BAL(22924))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_TRNC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">110</field>
+        <field name="code">TRNC</field>
+        <field name="name">Trade and other receivables</field>
+        <field name="formula">(PDR(1312)) + (PDR(3312)) + (PDR(13882, 1412, 2442, 3342, 33812, 33822, 33832, 33842, 33862, 33882, 3442) + DR(3352) + BAL(1361, 13622, 13632, 13682)) + (BAL(22932))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_DTA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">120</field>
+        <field name="code">DTA</field>
+        <field name="name">Deferred tax assets</field>
+        <field name="formula">(BAL(243))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_ONCA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">130</field>
+        <field name="code">ONCA</field>
+        <field name="name">Other non-current assets</field>
+        <field name="formula">(BAL(1542, 22942)) + (BAL(2422)) + (BAL(1532, 22943)) + (BAL(22882))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_CA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">140</field>
+        <field name="code">CA</field>
+        <field name="name">Current assets</field>
+        <field name="formula">[INV] + [BIOC] + [TRC] + [CTA] + [OFAC] + [CTAX] + [OCA] + [CASH]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_c_INV" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">150</field>
+        <field name="code">INV</field>
+        <field name="name">Inventories</field>
+        <field name="formula">(BAL(151, 152, 1531, 1541, 155, 156, 157, 158)) + (BAL(22941))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_BIOC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">160</field>
+        <field name="code">BIOC</field>
+        <field name="name">Biological assets</field>
+        <field name="formula">(BAL(21521)) + (BAL(21531)) + (BAL(22951))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_TRC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">170</field>
+        <field name="code">TRC</field>
+        <field name="name">Trade and other receivables</field>
+        <field name="formula">(PDR(1311)) + (PDR(3311)) + (PDR(13881, 1411, 2441, 3341, 33811, 33821, 33831, 33841, 33861, 33881, 3441, 332) + DR(3351) + BAL(13621, 13631, 13681)) + (BAL(22931)) + (PDR(13811, 13812))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_CTA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">180</field>
+        <field name="code">CTA</field>
+        <field name="name">Contract assets</field>
+        <field name="formula">(PDR(337))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_OFAC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">190</field>
+        <field name="code">OFAC</field>
+        <field name="name">Other financial assets</field>
+        <field name="formula">(BAL(121)) + (BAL(2291)) + (BAL(12812, 12822, 12831, 12882)) + (BAL(22811)) + (BAL(22921, 22922)) + (DR(171))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_CTAX" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">200</field>
+        <field name="code">CTAX</field>
+        <field name="name">Current tax assets</field>
+        <field name="formula">(BAL(133)) + (PDR(13831, 13832) + DR(333))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_OCA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">210</field>
+        <field name="code">OCA</field>
+        <field name="name">Other current assets</field>
+        <field name="formula">(BAL(2421)) + (BAL(22881))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_CASH" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">220</field>
+        <field name="code">CASH</field>
+        <field name="name">Cash and cash equivalents</field>
+        <field name="formula">(BAL(111, 112, 113)) + (BAL(12811, 12881))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_TA" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">230</field>
+        <field name="code">TA</field>
+        <field name="name">TOTAL ASSETS</field>
+        <field name="formula">[NCA] + [CA]</field>
+        <field name="level">0</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_c_EQL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">240</field>
+        <field name="code">EQL</field>
+        <field name="name">EQUITY AND LIABILITIES</field>
+        <field name="formula"></field>
+        <field name="level">0</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_c_EQP" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">250</field>
+        <field name="code">EQP</field>
+        <field name="name">Equity attributable to owners of the parent</field>
+        <field name="formula">[SC] + [SP] + [TS] + [RES] + [RE]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_c_SC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">260</field>
+        <field name="code">SC</field>
+        <field name="name">Share capital</field>
+        <field name="formula">(NBAL(41111)) + (NBAL(411122))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_SP" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">270</field>
+        <field name="code">SP</field>
+        <field name="name">Share premium</field>
+        <field name="formula">(NBAL(4112))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_TS" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">280</field>
+        <field name="code">TS</field>
+        <field name="name">Treasury shares</field>
+        <field name="formula">(NBAL(419))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_RES" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">290</field>
+        <field name="code">RES</field>
+        <field name="name">Other reserves</field>
+        <field name="formula">(NBAL(4113)) + (NBAL(4118)) + (NBAL(412)) + (NBAL(413)) + (NBAL(414)) + (NBAL(418))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_RE" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">300</field>
+        <field name="code">RE</field>
+        <field name="name">Retained earnings</field>
+        <field name="formula">(NBAL(4211, "HN_PREACQ") + PL_PRIOR()) + (NBAL(4212) + PL_CUR())</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_NCI" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">310</field>
+        <field name="code">NCI</field>
+        <field name="name">Non-controlling interests</field>
+        <field name="formula">(NBAL("HN_NCI"))</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_c_EQ" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">320</field>
+        <field name="code">EQ</field>
+        <field name="name">Total equity</field>
+        <field name="formula">[EQP] + [NCI]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_c_NCL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">330</field>
+        <field name="code">NCL</field>
+        <field name="name">Non-current liabilities</field>
+        <field name="formula">[BORNC] + [LEASENC] + [DTL] + [PROVNC] + [OLNC]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_c_BORNC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">340</field>
+        <field name="code">BORNC</field>
+        <field name="name">Borrowings</field>
+        <field name="formula">NBAL(34112, 34312) + NBAL(3432)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_LEASENC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">350</field>
+        <field name="code">LEASENC</field>
+        <field name="name">Lease liabilities</field>
+        <field name="formula">NBAL(34122)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_DTL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">360</field>
+        <field name="code">DTL</field>
+        <field name="name">Deferred tax liabilities</field>
+        <field name="formula">(NBAL(347))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_PROVNC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">370</field>
+        <field name="code">PROVNC</field>
+        <field name="name">Provisions</field>
+        <field name="formula">(NBAL(35212, 35222, 35232, 35252))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_OLNC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">380</field>
+        <field name="code">OLNC</field>
+        <field name="name">Other non-current liabilities</field>
+        <field name="formula">(PCR(3312)) + (PCR(1312)) + (CR(33322, 33332, 33342, 33352, 33362, 33372, 33392)) + (CR(3352)) + (NBAL(33872)) + (PCR(13832, 13882, 1412, 2442, 3342, 33812, 33822, 33832, 33842, 33862, 33882, 3442) + NBAL(3361, 33622, 33632, 33682)) + (NBAL(411121)) + (NBAL(356))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_CL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">390</field>
+        <field name="code">CL</field>
+        <field name="name">Current liabilities</field>
+        <field name="formula">[TP] + [CONTRACT] + [CTL] + [BORC] + [LEASEC] + [PROVC]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_c_TP" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">400</field>
+        <field name="code">TP</field>
+        <field name="name">Trade and other payables</field>
+        <field name="formula">(PCR(3311)) + (PCR(332)) + (PCR(3341)) + (CR(3351)) + (PCR(13811, 13812, 13831, 13881, 1411, 2441, 33811, 33821, 33831, 33841, 33861, 33881, 3441) + NBAL(33621, 33631, 33681)) + (NBAL(353)) + (NBAL(357))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_CONTRACT" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">410</field>
+        <field name="code">CONTRACT</field>
+        <field name="name">Contract liabilities</field>
+        <field name="formula">(PCR(1311)) + (PCR(337)) + (NBAL(33871))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_CTL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">420</field>
+        <field name="code">CTL</field>
+        <field name="name">Current tax liabilities</field>
+        <field name="formula">(CR(33311, 33312, 33321, 33331, 33341, 33351, 33361, 33371, 33381, 33382, 33391))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_BORC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">430</field>
+        <field name="code">BORC</field>
+        <field name="name">Borrowings</field>
+        <field name="formula">NBAL(34111, 34311) + CR(171)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_LEASEC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">440</field>
+        <field name="code">LEASEC</field>
+        <field name="name">Lease liabilities</field>
+        <field name="formula">NBAL(34121)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_PROVC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">450</field>
+        <field name="code">PROVC</field>
+        <field name="name">Provisions</field>
+        <field name="formula">(NBAL(35211, 35221, 35231, 35251))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_sfp_c_TL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">460</field>
+        <field name="code">TL</field>
+        <field name="name">Total liabilities</field>
+        <field name="formula">[NCL] + [CL]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_sfp_c_TEL" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_sfp_c"/>
+        <field name="sequence">470</field>
+        <field name="code">TEL</field>
+        <field name="name">TOTAL EQUITY AND LIABILITIES</field>
+        <field name="formula">[EQ] + [TL]</field>
+        <field name="level">0</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="report_ifrs_pl_c" model="vn.report">
+        <field name="name">IFRS Consolidated Statement of Profit or Loss and Other Comprehensive Income</field>
+        <field name="code">IFRS-PL-C</field>
+        <field name="sequence">150</field>
+        <field name="kind">period</field>
+        <field name="ledger">ifrs</field>
+        <field name="show_codes" eval="False"/>
+        <field name="form_code">IFRS</field>
+        <field name="form_note">(Prepared under IFRS Accounting Standards from the VAS books and the IFRS adjustments)</field>
+        <field name="title">CONSOLIDATED STATEMENT OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME (IFRS)</field>
+        <field name="consolidated" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_c_REV" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">10</field>
+        <field name="code">REV</field>
+        <field name="name">Revenue</field>
+        <field name="formula">CT(511) - CT(5117) - (DT(511) - DT(5117) + BAL(521))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_COS" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">20</field>
+        <field name="code">COS</field>
+        <field name="name">Cost of sales</field>
+        <field name="formula">-(BAL(632) - BAL(6327))</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_GP" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">30</field>
+        <field name="code">GP</field>
+        <field name="name">Gross profit</field>
+        <field name="formula">[REV] + [COS]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_c_OI" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">40</field>
+        <field name="code">OI</field>
+        <field name="name">Other income</field>
+        <field name="formula">NBAL(711) + NBAL(5117) - BAL(6327)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_SD" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">50</field>
+        <field name="code">SD</field>
+        <field name="name">Selling and distribution expenses</field>
+        <field name="formula">-BAL(641)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_AE" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">60</field>
+        <field name="code">AE</field>
+        <field name="name">Administrative expenses</field>
+        <field name="formula">-BAL(642)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_OE" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">70</field>
+        <field name="code">OE</field>
+        <field name="name">Other expenses</field>
+        <field name="formula">-BAL(811)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_OP" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">80</field>
+        <field name="code">OP</field>
+        <field name="name">Operating profit</field>
+        <field name="formula">[GP] + [OI] + [SD] + [AE] + [OE]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_c_FI" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">90</field>
+        <field name="code">FI</field>
+        <field name="name">Finance income</field>
+        <field name="formula">NBAL(515)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_FC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">100</field>
+        <field name="code">FC</field>
+        <field name="name">Finance costs</field>
+        <field name="formula">-BAL(635)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_ASSOC" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">110</field>
+        <field name="code">ASSOC</field>
+        <field name="name">Share of profit of associates and joint ventures</field>
+        <field name="formula">NBAL("HN_EQPL")</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_PBT" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">120</field>
+        <field name="code">PBT</field>
+        <field name="name">Profit before tax</field>
+        <field name="formula">[OP] + [FI] + [FC] + [ASSOC]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_c_TAX" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">130</field>
+        <field name="code">TAX</field>
+        <field name="name">Income tax expense</field>
+        <field name="formula">-BAL(821)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_PFY" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">140</field>
+        <field name="code">PFY</field>
+        <field name="name">Profit for the period</field>
+        <field name="formula">[PBT] + [TAX]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_c_PATTR" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">150</field>
+        <field name="code">PATTR</field>
+        <field name="name">Profit attributable to:</field>
+        <field name="formula"></field>
+        <field name="level">1</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_POWN" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">160</field>
+        <field name="code">POWN</field>
+        <field name="name">Owners of the parent</field>
+        <field name="formula">[PFY] - [PNCI]</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_PNCI" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">170</field>
+        <field name="code">PNCI</field>
+        <field name="name">Non-controlling interests</field>
+        <field name="formula">BAL("HN_PLNCI")</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_OCIH" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">180</field>
+        <field name="code">OCIH</field>
+        <field name="name">Other comprehensive income</field>
+        <field name="formula"></field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_c_OCI1" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">190</field>
+        <field name="code">OCI1</field>
+        <field name="name">Items that will not be reclassified to profit or loss: revaluation surplus</field>
+        <field name="formula">NBAL(412)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_OCI2" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">200</field>
+        <field name="code">OCI2</field>
+        <field name="name">Items that may be reclassified to profit or loss: exchange differences</field>
+        <field name="formula">NBAL(413)</field>
+        <field name="level">2</field>
+        <field name="bold" eval="False"/>
+    </record>
+
+    <record id="ifrs_pl_c_OCIT" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">210</field>
+        <field name="code">OCIT</field>
+        <field name="name">Other comprehensive income for the period</field>
+        <field name="formula">[OCI1] + [OCI2]</field>
+        <field name="level">1</field>
+        <field name="bold" eval="True"/>
+    </record>
+
+    <record id="ifrs_pl_c_TCI" model="vn.report.line">
+        <field name="report_id" ref="report_ifrs_pl_c"/>
+        <field name="sequence">220</field>
+        <field name="code">TCI</field>
+        <field name="name">Total comprehensive income for the period</field>
+        <field name="formula">[PFY] + [OCIT]</field>
+        <field name="level">0</field>
+        <field name="bold" eval="True"/>
+    </record>
+</odoo>

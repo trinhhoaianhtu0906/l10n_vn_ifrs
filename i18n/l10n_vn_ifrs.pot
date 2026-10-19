@@ -1,0 +1,649 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_vn_ifrs
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 05:12+0000\n"
+"PO-Revision-Date: 2026-10-19 05:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,subtitle:l10n_vn_ifrs.report_ifrs_cf
+msgid "(Direct method)"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,form_note:l10n_vn_ifrs.report_ifrs_cf
+#: model:vn.report,form_note:l10n_vn_ifrs.report_ifrs_pl
+#: model:vn.report,form_note:l10n_vn_ifrs.report_ifrs_pl_c
+#: model:vn.report,form_note:l10n_vn_ifrs.report_ifrs_sfp
+#: model:vn.report,form_note:l10n_vn_ifrs.report_ifrs_sfp_c
+msgid ""
+"(Prepared under IFRS Accounting Standards from the VAS books and the IFRS "
+"adjustments)"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_ASSETS
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_ASSETS
+msgid "ASSETS"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_AE
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_AE
+msgid "Administrative expenses"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_BIO
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_BIOC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_BIO
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_BIOC
+msgid "Biological assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_BORC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_BORNC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_BORC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_BORNC
+msgid "Borrowings"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,title:l10n_vn_ifrs.report_ifrs_sfp_c
+msgid "CONSOLIDATED STATEMENT OF FINANCIAL POSITION (IFRS)"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,title:l10n_vn_ifrs.report_ifrs_pl_c
+msgid ""
+"CONSOLIDATED STATEMENT OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME "
+"(IFRS)"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_32
+msgid "Capital returned and shares repurchased"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CASH
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CASH
+msgid "Cash and cash equivalents"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_60
+msgid "Cash and cash equivalents at the beginning of the period"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_70
+msgid "Cash and cash equivalents at the end of the period"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_III
+msgid "Cash flows from financing activities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_II
+msgid "Cash flows from investing activities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_I
+msgid "Cash flows from operating activities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,check_message:l10n_vn_ifrs.report_ifrs_cf
+msgid ""
+"Closing cash (70) does not match the ledger balance of cash and cash "
+"equivalents"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CTA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CTA
+msgid "Contract assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CONTRACT
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CONTRACT
+msgid "Contract liabilities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_COS
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_COS
+msgid "Cost of sales"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CA
+msgid "Current assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CL
+msgid "Current liabilities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CTAX
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CTAX
+msgid "Current tax assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_CTL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_CTL
+msgid "Current tax liabilities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_DTA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_DTA
+msgid "Deferred tax assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_DTL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_DTL
+msgid "Deferred tax liabilities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_36
+msgid "Dividends paid"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_EQL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_EQL
+msgid "EQUITY AND LIABILITIES"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_61
+msgid "Effect of exchange rate changes"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_EQP
+msgid "Equity attributable to owners of the parent"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_FC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_FC
+msgid "Finance costs"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_FI
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_FI
+msgid "Finance income"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_GW
+msgid "Goodwill"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_GP
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_GP
+msgid "Gross profit"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,form_code:l10n_vn_ifrs.report_ifrs_cf
+#: model:vn.report,form_code:l10n_vn_ifrs.report_ifrs_pl
+#: model:vn.report,form_code:l10n_vn_ifrs.report_ifrs_pl_c
+#: model:vn.report,form_code:l10n_vn_ifrs.report_ifrs_sfp
+#: model:vn.report,form_code:l10n_vn_ifrs.report_ifrs_sfp_c
+msgid "IFRS"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#. odoo-python
+#: code:addons/l10n_vn_ifrs/hooks.py:0
+msgid "IFRS Adjustments"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,name:l10n_vn_ifrs.report_ifrs_sfp_c
+msgid "IFRS Consolidated Statement of Financial Position"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,name:l10n_vn_ifrs.report_ifrs_pl_c
+msgid ""
+"IFRS Consolidated Statement of Profit or Loss and Other Comprehensive Income"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,name:l10n_vn_ifrs.report_ifrs_cf
+msgid "IFRS Statement of Cash Flows"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,name:l10n_vn_ifrs.report_ifrs_sfp
+msgid "IFRS Statement of Financial Position"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,name:l10n_vn_ifrs.report_ifrs_pl
+msgid "IFRS Statement of Profit or Loss and Other Comprehensive Income"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_TAX
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_TAX
+msgid "Income tax expense"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_05
+msgid "Income taxes paid"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_INTANG
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_INTANG
+msgid "Intangible assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_27
+msgid "Interest and dividends received"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_04
+msgid "Interest paid"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_INV
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_INV
+msgid "Inventories"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_IP
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_IP
+msgid "Investment property"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_INVEST
+msgid "Investments in associates and joint ventures"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_25
+msgid "Investments in other entities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_INVEST
+msgid "Investments in subsidiaries, associates and joint ventures"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OCI2
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OCI2
+msgid "Items that may be reclassified to profit or loss: exchange differences"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OCI1
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OCI1
+msgid ""
+"Items that will not be reclassified to profit or loss: revaluation surplus"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_LEASEC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_LEASENC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_LEASEC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_LEASENC
+msgid "Lease liabilities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_23
+msgid "Loans granted and debt instruments purchased"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_24
+msgid "Loans repaid and debt instruments sold"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_40
+msgid "Net cash from financing activities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_20
+msgid "Net cash from operating activities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_30
+msgid "Net cash used in investing activities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_50
+msgid "Net increase (decrease) in cash and cash equivalents"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_PNCI
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_NCI
+msgid "Non-controlling interests"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_NCA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_NCA
+msgid "Non-current assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_NCL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_NCL
+msgid "Non-current liabilities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OP
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OP
+msgid "Operating profit"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OCIH
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OCIH
+msgid "Other comprehensive income"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OCIT
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OCIT
+msgid "Other comprehensive income for the period"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_OCA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_OCA
+msgid "Other current assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OE
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OE
+msgid "Other expenses"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_OFAC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_OFANC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_OFAC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_OFANC
+msgid "Other financial assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_OI
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_OI
+msgid "Other income"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_ONCA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_ONCA
+msgid "Other non-current assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_OLNC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_OLNC
+msgid "Other non-current liabilities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_07
+msgid "Other operating payments"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_06
+msgid "Other operating receipts"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_RES
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_RES
+msgid "Other reserves"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_POWN
+msgid "Owners of the parent"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_35
+msgid "Payment of lease liabilities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_03
+msgid "Payments to employees"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_02
+msgid "Payments to suppliers"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_33
+msgid "Proceeds from borrowings"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_26
+msgid "Proceeds from investments in other entities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_31
+msgid "Proceeds from issue of shares"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_22
+msgid ""
+"Proceeds from sale of property, plant and equipment and other long-term "
+"assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_PATTR
+msgid "Profit attributable to:"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_PBT
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_PBT
+msgid "Profit before tax"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_PFY
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_PFY
+msgid "Profit for the period"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_PPE
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_PPE
+msgid "Property, plant and equipment"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_PROVC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_PROVNC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_PROVC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_PROVNC
+msgid "Provisions"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_21
+msgid "Purchase of property, plant and equipment and other long-term assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_01
+msgid "Receipts from customers"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_cf_34
+msgid "Repayment of borrowings"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_RE
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_RE
+msgid "Retained earnings"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_REV
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_REV
+msgid "Revenue"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_ROU
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_ROU
+msgid "Right-of-use assets"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,title:l10n_vn_ifrs.report_ifrs_cf
+msgid "STATEMENT OF CASH FLOWS (IFRS)"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,title:l10n_vn_ifrs.report_ifrs_sfp
+msgid "STATEMENT OF FINANCIAL POSITION (IFRS)"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,title:l10n_vn_ifrs.report_ifrs_pl
+msgid "STATEMENT OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME (IFRS)"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_SD
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_SD
+msgid "Selling and distribution expenses"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_SC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_SC
+msgid "Share capital"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_ASSOC
+msgid "Share of profit of associates and joint ventures"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_SP
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_SP
+msgid "Share premium"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TA
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TA
+msgid "TOTAL ASSETS"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TEL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TEL
+msgid "TOTAL EQUITY AND LIABILITIES"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report,check_message:l10n_vn_ifrs.report_ifrs_sfp
+#: model:vn.report,check_message:l10n_vn_ifrs.report_ifrs_sfp_c
+msgid "Total assets differ from total equity and liabilities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_TCI
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_pl_c_TCI
+msgid "Total comprehensive income for the period"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_EQ
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_EQ
+msgid "Total equity"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TL
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TL
+msgid "Total liabilities"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TP
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TP
+msgid "Trade and other payables"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TRC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TRNC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TRC
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TRNC
+msgid "Trade and other receivables"
+msgstr ""
+
+#. module: l10n_vn_ifrs
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_TS
+#: model:vn.report.line,name:l10n_vn_ifrs.ifrs_sfp_c_TS
+msgid "Treasury shares"
+msgstr ""
